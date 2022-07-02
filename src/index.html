@@ -35,6 +35,19 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.6.0/dist/aframe-look-at-component.min.js"></script>
   </head>
   <body>
+    <script>
+      AFRAME.registerComponent("exit-ar-button", {
+        schema: {
+          element: { type: "selector" },
+        },
+        init: function () {
+          this.data.element.addEventListener("click", (ev) => {
+            console.log("asdfasdf");
+            this.el.sceneEl.renderer.xr.getSession().end();
+          });
+        },
+      });
+    </script>
     <a-scene
       webxr="requiredFeatures: hit-test,local-floor;
                 optionalFeatures: dom-overlay,unbounded;
@@ -44,6 +57,7 @@
         vrm="src:vrm/AliciaSolid.vrm;blink:true"
         vrm-anim=""
         rotation="0 180 0"
+        position="0 1 -2"
       ></a-entity>
       <a-entity exit-ar-button="element: #exit-ar"></a-entity>
       <div id="overlay" style="position: relative; z-index: 99999999">
@@ -51,17 +65,5 @@
         <button id="exit-ar">Exit AR</button>
       </div>
     </a-scene>
-    <script>
-      AFRAME.registerComponent("exit-ar-button", {
-        schema: {
-          element: { type: "selector" },
-        },
-        init: function () {
-          this.data.element.addEventListener("click", (ev) => {
-            this.el.sceneEl.renderer.xr.getSession().end();
-          });
-        },
-      });
-    </script>
   </body>
 </html>
