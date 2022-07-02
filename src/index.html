@@ -6,6 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <style>
+      /* CSS files add styling rules to your content */
+
+      body {
+        font-family: helvetica, arial, sans-serif;
+        margin: 2em;
+      }
+
+      h1 {
+        /*  font-style: italic;
+	  color: #373fff;
+	*/
+        font-size: 1.35em;
+      }
+
+      div#text {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        padding: 6px;
+        /*
+	text-shadow: 0 0 5px white;
+	*/
+        max-width: 350px;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+
     <script>
       // WebXR requires HTTPS, so the site doesn't work if someone manually enters
       // the URL and ends up using HTTP. To work around this, force redirect from
@@ -158,7 +186,7 @@
 
         <a-asset-item
           id="reticle"
-          src="./gltf/rocket.glb"
+          src="reticle.gltf"
           response-type="arraybuffer"
         ></a-asset-item>
       </a-assets>
@@ -210,7 +238,6 @@
       <a-entity
         gltf-model="#reticle"
         scale="0.8 0.8 0.8"
-        position="3 0 2"
         ar-hit-test
       ></a-entity>
     </a-scene>
