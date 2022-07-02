@@ -84,6 +84,13 @@ module.exports = (outputFile) => ({
         },
         type: "asset/resource",
       },
+      {
+        test: /\.(gltf|glb)$/,
+        generator: {
+          filename: `./gltf/[name][ext]`,
+        },
+        type: "asset/resource",
+      },
     ],
   },
 
@@ -127,6 +134,7 @@ module.exports = (outputFile) => ({
       "@js": path.resolve(__dirname, "./src/js/"),
       "@scss": path.resolve(__dirname, "./src/scss/"),
       "@vrm": path.resolve(__dirname, "./src/vrm/"),
+      "@gltf": path.resolve(__dirname, "./src/gltf/"),
     },
   },
 });
