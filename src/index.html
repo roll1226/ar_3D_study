@@ -1,86 +1,27 @@
-<!-- <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AR 3D</title>
-    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@v1.0.4/dist/aframe-master.min.js"></script>
-    <script src="https://binzume.github.io/aframe-vrm/dist/aframe-vrm.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body>
-    <body>
-      <a-scene embedded arjs>
-        <a-entity
-          vrm="src:vrm/AliciaSolid.vrm;blink:true"
-          vrm-anim=""
-          rotation="0 180 0"
-        ></a-entity>
-        <a-camera position="0 1.6 2"></a-camera>
-      </a-scene>
-    </body>
-  </body>
-</html> -->
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    <script src="https://binzume.github.io/aframe-vrm/dist/aframe-vrm.js"></script>
-    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.6.0/dist/aframe-look-at-component.min.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
   </head>
   <body>
-    <a-scene
-      embedded
-      arjs="debugUIEnabled:false;"
-      renderer="gammaOutput: true;"
-      vr-mode-ui="enabled: false"
-    >
-      <a-entity
-        vrm="src:vrm/AliciaSolid.vrm;blink:true"
-        vrm-anim=""
-        rotation="0 180 0"
-        position="0 1 -7"
-      ></a-entity>
-
-      <a-light type="ambient" color="#ffffff"></a-light>
-      <a-light type="point" intensity="2" position="0 4 0"></a-light>
-    </a-scene>
-    <!-- <script>
-      AFRAME.registerComponent("exit-ar-button", {
-        schema: {
-          element: { type: "selector" },
-        },
-        init: function () {
-          this.data.element.addEventListener("click", (ev) => {
-            console.log(this.el.sceneEl.renderer.xr);
-            this.el.sceneEl.renderer.xr.getSession().end();
-          });
-        },
-      });
-    </script>
-    <a-scene
-      webxr="requiredFeatures: hit-test,local-floor;
-                optionalFeatures: dom-overlay,unbounded;
-                overlayElement: #overlay;"
-    >
-      <a-entity
-        vrm="src:vrm/AliciaSolid.vrm;blink:true"
-        vrm-anim=""
-        rotation="0 180 0"
-        position="0 1 -2"
-      ></a-entity>
-      <a-entity exit-ar-button="element: #exit-ar"></a-entity>
-      <div id="overlay" style="position: relative; z-index: 99999999">
-        <span id="greeting"> Hi, I'm the DOM Overlay </span>
-        <button id="exit-ar">Exit AR</button>
-      </div>
-    </a-scene> -->
+    <model-viewer
+      src="model.gltf"
+      ios-src="model.usdz"
+      controls
+      auto-rotate
+      ar
+    ></model-viewer>
   </body>
 </html>
