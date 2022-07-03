@@ -85,7 +85,7 @@ module.exports = (outputFile) => ({
         type: "asset/resource",
       },
       {
-        test: /\.(gltf|glb|bin)$/,
+        test: /\.(gltf|glb|bin|usdz)$/,
         generator: {
           filename: `./gltf/[name][ext]`,
         },

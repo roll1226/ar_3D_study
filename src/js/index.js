@@ -5,4 +5,5 @@ import "@gltf/model.glb";
 import "@gltf/rocket.glb";
 import "@gltf/reticle.gltf";
 import "@gltf/reticle.bin";
+import "@gltf/rocket.usdz";
 import "reset-css/reset.css";
