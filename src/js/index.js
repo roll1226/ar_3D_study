@@ -4,4 +4,5 @@ import "@vrm/AliciaSolid.vrm";
 import "@gltf/model.glb";
 import "@gltf/rocket.glb";
 import "@gltf/reticle.gltf";
+import "@gltf/reticle.bin";
 import "reset-css/reset.css";
