@@ -10,12 +10,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sat Jul  2 10:46:18 2022
+# Make data base, printed on Mon Jul  4 08:15:54 2022
 
 # Variables
 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -30,7 +29,7 @@ NODENV_SHELL = zsh
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/roll1226/personalDevelopment/nocca-nocca
+CURDIR := /Users/roll1226/personalDevelopment/arThree
 # makefile
 SHELL = /bin/sh
 # environment
@@ -48,9 +47,9 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/z0/_y_tqghj4_vf25b0fbnscb4c0000gn/T/vscode-ipc-c4ee318a-68ae-4bbf-93e0-83eb2d7f9471.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/z0/_y_tqghj4_vf25b0fbnscb4c0000gn/T/vscode-ipc-feae2a43-3a89-4f30-96e7-d7247e3a7c2b.sock
 # environment
-VSCODE_CWD = /Users/roll1226/personalDevelopment/nocca-nocca
+VSCODE_CWD = /Users/roll1226/personalDevelopment/arThree
 # environment
 PATH = /opt/homebrew/opt/openjdk/bin:/Users/roll1226/.anyenv/envs/nodenv/shims:/Users/roll1226/.anyenv/envs/nodenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/roll1226/batch:/Users/roll1226/development/flutter/bin
 # environment
@@ -70,7 +69,7 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.pbo5MK6BTw/Listeners
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/roll1226/personalDevelopment/nocca-nocca
+PWD = /Users/roll1226/personalDevelopment/arThree
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
@@ -88,7 +87,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/roll1226/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/roll1226/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LOGNAME = roll1226
 # environment
@@ -103,6 +102,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 XPC_FLAGS = 0x0
 # environment
 COLORTERM = truecolor
+ 
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -134,8 +134,7 @@ TMPDIR = /var/folders/z0/_y_tqghj4_vf25b0fbnscb4c0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
- 
-VSCODE_IPC_HOOK = /Users/roll1226/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/roll1226/Library/Application Support/Code/1.68.1-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -145,7 +144,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.15
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.41967294.41967300.0DADEEB8-8647-42FA-870B-B03448D026A2
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.44997990.44997996.229CB788-BC6F-4218-AF8C-A7741C14A2C7
 # environment
 LC_TERMINAL_VERSION = 3.4.15
 # environment
@@ -189,7 +188,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 45488
+VSCODE_PID = 67884
 # variable set hash-table stats:
 # Load=87/1024=8%, Rehash=0, Collisions=5/110=5%
 
@@ -199,7 +198,7 @@ VSCODE_PID = 45488
 
 # Directories
 
-# . (device 16777232, inode 40322595): 20 files, no impossibilities.
+# . (device 16777232, inode 44735448): 20 files, no impossibilities.
 
 # 20 files, no impossibilities in 1 directories.
 
@@ -235,7 +234,7 @@ fix-eslint:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-17 22:44:39
+#  Last modified 2022-07-02 10:46:27
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -248,7 +247,6 @@ fix:
 #  commands to execute (from `Makefile', line 6):
 	npm run fix
 	
- 
 
 fix-prettier:
 #  Implicit rule search has not been done.
@@ -293,6 +291,6 @@ dev:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul  2 10:46:18 2022
+# Finished Make data base on Mon Jul  4 08:15:54 2022
 
  
